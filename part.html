@@ -1,0 +1,10 @@
+<div>
+		<h3>Daftar Sekarang:: </h3>
+
+		<input type="text" ng-model="hasil">
+
+		<ul>
+			<li ng-repeat= "dn in data | filter:hasil | orderBy: 'id' "> 
+			{{ dn.nama }} Kota: {{ dn.kota }} </li>
+		</ul>
+	</div>
